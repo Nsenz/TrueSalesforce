@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c61275e3-e5a1-4d16-9b12-5f882651e390" name="Default Changelist" comment="">
+    <list default="true" id="c61275e3-e5a1-4d16-9b12-5f882651e390" name="Default Changelist" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/classes/requestStatus.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/requestTypes.cls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/vacationRequest.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/vacationTableController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vacationTableController.cls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.js-meta.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +22,11 @@
       <list>
         <option value="LightningWebComponent" />
         <option value="LightningWebComponent.js-meta" />
+        <option value="Class" />
+        <option value="ApexClass" />
+        <option value="ApexEnum" />
+        <option value="ApexClass.cls-meta" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -29,8 +42,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UseStandardLocationKey" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Projects/TrueSalesforce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -58,11 +72,30 @@
       <option name="project" value="LOCAL" />
       <updated>1620900480419</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1620902254281</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620902254281</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deploy with ApexVCS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deploy with ApexVCS" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

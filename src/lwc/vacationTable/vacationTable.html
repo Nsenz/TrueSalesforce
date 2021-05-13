@@ -1,15 +1,117 @@
 <template>
-    <table>
-        <thead>
-            <tr>
-                <th>Request</th>
-                <th>Owner</th>
-                <th>Vacation Type</th>
-                <th>Start Date</th>
-                <th>End Date</th>
-                <th>Working days</th>
-                <th>Manager</th>
-            </tr>
-        </thead>
-    </table>
+    <article class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a href="#" class="slds-card__header-link slds-truncate" title="Vacation Requests">
+                            <span>Vacation Requests</span>
+                        </a>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <lightning-button label="New Request" onclick={openModal}></lightning-button>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" aria-labelledby="element-with-table-label other-element-with-table-label">
+                <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Request">Request</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Owner">Owner</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Vacation Type">Vacation Type</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Start Date">Start Date</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="End Date">End Date</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Working Days">Working Days</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Status">Status</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Manager">Manager</div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="slds-hint-parent">
+                    <td data-label="Request">
+                        <div class="slds-truncate">1</div>
+                    </td>
+                    <td data-label="Owner">
+                        <div class="slds-truncate">Dmitrii</div>
+                    </td>
+                    <td data-label="Vacation Type">
+                        <div class="slds-truncate">Vacation</div>
+                    </td>
+                    <td data-label="Start Date">
+                        <div class="slds-truncate">13.05.2021</div>
+                    </td>
+                    <td data-label="End Date">
+                        <div class="slds-truncate">14.05.2021</div>
+                    </td>
+                    <td data-label="Working Days">
+                        <div class="slds-truncate">1</div>
+                    </td>
+                    <td data-label="Status">
+                        <div class="slds-truncate">New</div>
+                    </td>
+                    <td data-label="Manager">
+                        <div class="slds-truncate">Dmitrii</div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+    <!-- Modal as a separate component? -->
+    <template if:true={isModalOpened}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Vacation request form</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-card title="Create Record" icon-name="standard:record">
+                        <div class="slds-m-around_medium">
+                            <!-- Dropdown selector -->
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label" for="requestType">Request Type</label>
+                                <div class="slds-form-element__control">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="requestType">
+                                            <!-- REPLACE WITH DATA FROM BACKEND -->
+                                            <template for:each={requestTypes} for:item="requestType">
+                                                <option key={requestType}>{requestType}</option>
+                                            </template>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- -->
+                            <lightning-input label="Date Start" type="date" onchange={handleDateStart} class="slds-m-bottom_x-small"></lightning-input>
+                            <lightning-input label="Date End" type="date" onchange={handleDateEnd} class="slds-m-bottom_x-small"></lightning-input>
+                            <lightning-input label="Manager" disabled class="slds-m-bottom_x-small" value={manager}></lightning-input>
+                        </div>
+                    </lightning-card>
+                </div>
+                <footer class="slds-modal__footer slds-modal__footer_directional">
+                    <button class="slds-button slds-button_neutral" onclick={closeModal}>Close</button>
+                    <button class="slds-button slds-button_brand" onclick={createRequest}>Create a new request</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
 </template>
