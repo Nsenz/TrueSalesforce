@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="salesforce.module" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/.jetforcer/built-in-stubs.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$MODULE_DIR$/.jetforcer/built-in-stubs.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+  <component name="RetrieveModel" standardCheckboxSelected="false">
+    <selectedComponentNames>
+      <SelectedComponentNamesPersistedState type="APEX_CLASS" selectAll="true" />
+      <SelectedComponentNamesPersistedState type="LIGHTNING_WEB_COMPONENT" selectAll="true" />
+    </selectedComponentNames>
+    <componentTreeState>
+      <RetrieveComponentTreeNodePersistedState componentType="ApexClass" isChecked="true" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="ApexComponent" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="ApexPage" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="ApexTrigger" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="AuraDefinitionBundle" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomApplication" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomLabels" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomObject" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomTab" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="ExternalDataSource" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="Flow" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="InstalledPackage" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="Layout" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="LightningComponentBundle" isChecked="true" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="Network" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="StaticResource" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="Workflow" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="ApexTestSuite" />
+      <RetrieveComponentTreeNodePersistedState componentType="ApprovalProcess" />
+      <RetrieveComponentTreeNodePersistedState componentType="AssignmentRules" />
+      <RetrieveComponentTreeNodePersistedState componentType="CallCenter" />
+      <RetrieveComponentTreeNodePersistedState componentType="Community" />
+      <RetrieveComponentTreeNodePersistedState componentType="CommunityTemplateDefinition" />
+      <RetrieveComponentTreeNodePersistedState componentType="CommunityThemeDefinition" />
+      <RetrieveComponentTreeNodePersistedState componentType="ConnectedApp" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomMetadata" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomObjectTranslation" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomPermission" />
+      <RetrieveComponentTreeNodePersistedState componentType="CustomSite" />
+      <RetrieveComponentTreeNodePersistedState componentType="Document" />
+      <RetrieveComponentTreeNodePersistedState componentType="EmailTemplate" />
+      <RetrieveComponentTreeNodePersistedState componentType="FlexiPage" />
+      <RetrieveComponentTreeNodePersistedState componentType="FlowDefinition" />
+      <RetrieveComponentTreeNodePersistedState componentType="GlobalValueSet" />
+      <RetrieveComponentTreeNodePersistedState componentType="GlobalValueSetTranslation" />
+      <RetrieveComponentTreeNodePersistedState componentType="Group" />
+      <RetrieveComponentTreeNodePersistedState componentType="HomePageComponent" />
+      <RetrieveComponentTreeNodePersistedState componentType="HomePageLayout" />
+      <RetrieveComponentTreeNodePersistedState componentType="PermissionSet" />
+      <RetrieveComponentTreeNodePersistedState componentType="PermissionSetGroup" />
+      <RetrieveComponentTreeNodePersistedState componentType="PlatformCachePartition" />
+      <RetrieveComponentTreeNodePersistedState componentType="Portal" />
+      <RetrieveComponentTreeNodePersistedState componentType="PostTemplate" />
+      <RetrieveComponentTreeNodePersistedState componentType="Profile" />
+      <RetrieveComponentTreeNodePersistedState componentType="Queue" />
+      <RetrieveComponentTreeNodePersistedState componentType="QuickAction" />
+      <RetrieveComponentTreeNodePersistedState componentType="RemoteSiteSetting" />
+      <RetrieveComponentTreeNodePersistedState componentType="Report" />
+      <RetrieveComponentTreeNodePersistedState componentType="ReportType" />
+      <RetrieveComponentTreeNodePersistedState componentType="Role" />
+      <RetrieveComponentTreeNodePersistedState componentType="Settings" />
+      <RetrieveComponentTreeNodePersistedState componentType="SharingRules" />
+      <RetrieveComponentTreeNodePersistedState componentType="SharingSet" />
+      <RetrieveComponentTreeNodePersistedState componentType="SiteDotCom" />
+      <RetrieveComponentTreeNodePersistedState componentType="StandardValueSet" />
+      <RetrieveComponentTreeNodePersistedState componentType="Translations" />
+    </componentTreeState>
+    <fileRetrievalHistory>
+      <map>
+        <entry key="01p0900000GySirAAF">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1620835155000" />
+          </value>
+        </entry>
+        <entry key="0Rb09000000DZ8kCAG">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1620835320000" />
+          </value>
+        </entry>
+      </map>
+    </fileRetrievalHistory>
+  </component>
+</module>
