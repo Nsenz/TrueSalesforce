@@ -1,16 +1,452 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c61275e3-e5a1-4d16-9b12-5f882651e390" name="Default Changelist" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/classes/requestStatus.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/requestTypes.cls" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/vacationRequest.cls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/classes/vacationTableController.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vacationTableController.cls" afterDir="false" />
+    <list default="true" id="c61275e3-e5a1-4d16-9b12-5f882651e390" name="Default Changelist" comment="Deploy with ApexVCS">
+      <change beforePath="$PROJECT_DIR$/src/applications/Dmitrii.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__AllTabSet.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__AppLauncher.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Chatter.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Community.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Content.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Insights.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningBolt.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningInstrumentation.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningSales.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningSalesConsole.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningScheduler.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__LightningService.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Marketing.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Platform.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__QueueManagement.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Sales.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__SalesforceCMS.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Service.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__ServiceConsole.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applications/standard__Sites.app" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignmentRules/Case.assignmentRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assignmentRules/Lead.assignmentRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/communities/Internal Zone.community" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/MarketingProductInquiryResponse.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewUserLoginInformationSAMPLE.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceResetPasswordSAMPLE.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SalesNewCustomerEmail.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseAssignmentNotification.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseCreatedPhoneInquiries.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseCreatedWebInquiries.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportCaseResponse.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportEscalatedCaseNotification.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportEscalatedCaseReassignment.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportSelfServiceNewLoginandPassword.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SupportSelfServiceResetPassword.email" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/FlexiPage.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/FlexiPage1.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/FlexiPage2.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/Home_Page_Default.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/Home_Page_Default1.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/Home_Page_Default2.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/LightningSalesConsole_UtilityBar.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/LightningService_UtilityBar.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flexipages/Vacation_Request_UtilityBar.flexipage" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homePageLayouts/DE Default.homePageLayout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labels/CustomLabels.labels" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account %28Marketing%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account %28Sales%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account %28Support%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Account-Account Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AlternativePaymentMethod-Alternative Payment Method Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ApiAnomalyEventStore-API Anomaly Event Store Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Asset-Asset Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AssetAction-Действие над активом%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AssetActionSource-Источник действия над активом%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AssetRelationship-Asset Relationship Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AssetStatePeriod-Период состояния актива%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AssignedResource-Assigned Resource Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthorizationForm-Authorization Form Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthorizationFormConsent-Authorization Form Consent Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthorizationFormDataUse-Authorization Form Data Use Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/AuthorizationFormText-Authorization Form Text Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Campaign-Campaign Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CampaignMember-Campaign Member Page Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CardPaymentMethod-Card Payment Method Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Case-Case %28Marketing%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Case-Case %28Sales%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Case-Case %28Support%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Case-Case Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CaseClose-Close Case Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CaseMilestone-Макет контрольной точки обращения.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CommunityMemberLayout-Community Member Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ConsumptionRate-Consumption Rate Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ConsumptionSchedule-Consumption Schedule Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Contact-Contact %28Marketing%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Contact-Contact %28Sales%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Contact-Contact %28Support%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Contact-Contact Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ContactPointAddress-Contact Point Address Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ContactPointEmail-Contact Point Email Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ContactPointPhone-Contact Point Phone Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ContactPointTypeConsent-Contact Point Type Consent Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ContentVersion-Content Version Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Contract-Contract Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ContractLineItem-Макет элемента строки контракта.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CredentialStuffingEventStore-Credential Stuffing Event Store Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CreditMemo-Credit Memo Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/CreditMemoLine-Credit Memo Line Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/DandBCompany-D%26B Company Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/DataUseLegalBasis-Data Use Legal Basis Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/DataUsePurpose-Data Use Purpose Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/DigitalWallet-Digital Wallet Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/DuplicateRecordSet-Duplicate Record Set Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/EmailMessage-Email Message Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Entitlement-Макет права.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/EntityMilestone-Макет контрольной точки объекта.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Event-Event Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/FeedItem-Feed Item Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/FinanceBalanceSnapshot-Снимок финансового баланса%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/FinanceTransaction-Финансовая транзакция%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Global-Global Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Idea-Idea Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Individual-Individual Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Invoice-Invoice Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/InvoiceLine-Invoice Line Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Lead-Lead %28Marketing%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Lead-Lead %28Sales%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Lead-Lead %28Support%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Lead-Lead Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/LegalEntity-Юридическое лицо%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Macro-Macro Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/OperatingHours-Operating Hours Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity %28Marketing%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity %28Sales%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity %28Support%29 Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Opportunity-Opportunity Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/OpportunityLineItem-Opportunity Product Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Order-Order Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/OrderItem-Order Product Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Payment-Payment Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PaymentAuthAdjustment-Payment Authorization Adjustment Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PaymentAuthorization-Payment Authorization Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PaymentGateway-Payment Gateway Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PaymentGatewayLog-Payment Gateway Log Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PaymentGroup-Payment Group Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PaymentLineInvoice-Payment Line Invoice Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Pricebook2-Price Book Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/PricebookEntry-Price Book Entry Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ProcessException-Исключение процесса%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Product2-Product Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ProductConsumptionSchedule-Product Consumption Schedule Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/QuickText-Quick Text Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Refund-Refund Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/RefundLinePayment-Refund Line Payment Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ReportAnomalyEventStore-Report Anomaly Event Store Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ResourceAbsence-Resource Absence Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ResourcePreference-Resource Preference Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ReturnOrder-Return Order Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ReturnOrderItemAdjustment-Поправка элемента заказа на возврат%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ReturnOrderItemTax-Налог на элемент заказа на возврат%3A макет.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ReturnOrderLineItem-Return Order Line Item Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Scorecard-Scorecard Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ScorecardAssociation-Scorecard Association Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ScorecardMetric-Scorecard Metric Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ServiceAppointment-Service Appointment Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ServiceContract-Макет сервисного контракта.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ServiceResource-Service Resource Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ServiceResourceSkill-Service Resource Skill Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ServiceTerritory-Service Territory Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ServiceTerritoryMember-Service Territory Member Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/SessionHijackingEventStore-Session Hijacking Event Store Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/SkillRequirement-Skill Requirement Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/SocialPersona-Social Persona Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Solution-Solution Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Task-Task Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/ThreatDetectionFeedback-Threat Detection Feedback Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/TimeSlot-Time Slot Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/User-User Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/UserProvAccount-User Provisioning Account Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/UserProvisioningLog-User Provisioning Log Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/UserProvisioningRequest-User Provisioning Request Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Vacation_Request__c-Vacation Request Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/WorkOrder-Work Order Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/WorkOrderLineItem-Work Order Line Item Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/WorkType-Work Type Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/WorkTypeGroup-Work Type Group Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/WorkTypeGroupMember-Work Type Group Member Layout.layout" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/helloWorld/helloWorld.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/helloWorld/helloWorld.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/helloWorld/helloWorld.js-meta.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.js-meta.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/objectTranslations/Vacation_Request__c-ru.objectTranslation" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Admin.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Analytics Cloud Integration User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Analytics Cloud Security User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Authenticated Website.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Chatter External User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Chatter Free User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Chatter Moderator User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/ContractManager.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Cross Org Data Proxy User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Custom%3A Marketing Profile.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Custom%3A Sales Profile.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Custom%3A Support Profile.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community Login User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community Plus Login User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community Plus User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Community User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Portal Manager Custom.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Customer Portal Manager Standard.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/External Identity User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Force%2Ecom - App Subscription User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Force%2Ecom - Free User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Gold Partner User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/High Volume Customer Portal User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/HighVolumePortal.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Identity User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/MarketingProfile.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Minimum Access - Salesforce.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Partner App Subscription User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Partner Community Login User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Partner Community User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/PlatformPortal.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/ReadOnly.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Silver Partner User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/SolutionManager.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Standard.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/StandardAul.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profiles/Work%2Ecom Only User.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Case.LogACall.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Case.NewChildCase.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/CollaborationGroup.NewGroupMember.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/CollaborationGroup.NewGroupRecord.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/FeedItem.NewTaskFromFeedItem.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/LogACall.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewAccount.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewCase.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewContact.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewEvent.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewGroup.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewLead.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewNote.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewOpportunity.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/NewTask.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/SendEmail.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.Defer.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.Defer_0.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.Defer_1.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.EditDescription.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.EditDescription_0.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.EditDescription_1.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.UpdatePriority.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.UpdatePriority_0.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.UpdatePriority_1.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.UpdateStatus.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.UpdateStatus_0.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quickActions/Task.UpdateStatus_1.quickAction" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remoteSiteSettings/ApexDevNet.remoteSite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportTypes/screen_flows_prebuilt_crt.reportType" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reports/unfiled$public/flow_screen_prebuilt_report.report" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/CEO.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/CFO.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/COO.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/ChannelSalesTeam.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/CustomerSupportInternational.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/CustomerSupportNorthAmerica.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/DirectorChannelSales.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/DirectorDirectSales.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/EasternSalesTeam.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/InstallationRepairServices.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/MarketingTeam.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/SVPCustomerServiceSupport.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/SVPHumanResources.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/SVPSalesMarketing.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/VPInternationalSales.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/VPMarketing.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/VPNorthAmericanSales.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/WesternSalesTeam.role" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Account.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/AccountIntelligence.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Actions.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Activities.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Address.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Analytics.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Apex.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/AppAnalytics.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/AppExperience.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Archive.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Blockchain.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Bot.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/BusinessHours.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Campaign.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Case.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Chatter.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ChatterEmailsMD.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Communities.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Company.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ConnectedApp.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Content.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Contract.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ConversationalIntelligence.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Currency.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/CustomerDataPlatform.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/DataDotCom.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Deployment.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/DevHub.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Discovery.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/DocumentChecklist.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EAC.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EmailAdministration.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EmailIntegration.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EmailTemplate.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EmployeeUser.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EncryptionKey.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/EnhancedNotes.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Entitlement.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Essentials.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Event.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ExperienceBundle.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ExternalServices.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/FieldService.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/FileUploadAndDownloadSecurity.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/FilesConnect.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Flow.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Forecasting.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Formula.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/GoogleApps.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Ideas.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Industries.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/InvocableAction.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/IsvHammer.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Knowledge.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Language.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/LeadConfig.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/LightningExperience.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/LiveAgent.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/LiveMessage.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Macro.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Mobile.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/MyDomain.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Name.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Notifications.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ObjectLinking.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/OmniChannel.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Opportunity.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Order.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/OrderManagement.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Org.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Pardot.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/PardotEinstein.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/PartyDataModel.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/PathAssistant.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Picklist.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/PlatformEncryption.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Portals.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/PredictionBuilder.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Privacy.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Product.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/QuickText.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Quote.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/RecommendationBuilder.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/RecordPage.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/RetailExecution.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Schema.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Search.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Security.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ServiceCloudVoice.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/ServiceSetupAssistant.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Sharing.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Site.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/SocialProfile.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/SourceTracking.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Survey.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/SystemNotification.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Territory2.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Trailhead.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/TrialOrg.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/UserEngagement.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/UserInterface.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/UserManagement.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Voice.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/WebToX.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/WorkDotCom.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Account.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ActivityRecurrence2.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ActivityRecurrence2Exception.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AlternativePaymentMethod.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Asset.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AssistantInteraction.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AssistantProgress.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AssistantRecommendation.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AuthorizationForm.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AuthorizationFormConsent.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/AuthorizationFormDataUse.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CalendarModel.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CalendarView.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Campaign.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Case.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CleanLeadBackup.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CommSubscription.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CommSubscriptionChannelType.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CommSubscriptionConsent.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ComponentResponseCache.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ConsumptionSchedule.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Contact.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ContactPointConsent.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ContactPointTypeConsent.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ContactRequest.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/CreditMemo.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/DataUseLegalBasis.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/DataUsePurpose.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/EngagementChannelType.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ExchangeUserMapping.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ExternalEventMapping.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/FinanceBalanceSnapshot.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/FinanceTransaction.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/FlowInterview.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/FlowInterviewLog.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Image.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Individual.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Invoice.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Lead.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/LegalEntity.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ListEmail.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Location.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Macro.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/MacroUsage.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/MessagingEndUser.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/MessagingSession.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/NotifDeliveryUserPref.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Opportunity.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Order.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/OrgDeleteRequest.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/PartyConsent.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ProcessException.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Product2.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/PromptAction.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/QuickText.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/QuickTextUsage.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/RecordMergeHistory.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ReportResultBlob.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ReturnOrder.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Scorecard.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ServiceAppointment.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ServiceContract.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ServiceResource.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/ServiceTerritory.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/SiqUserBlacklist.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/StreamActivityAccess.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/StreamingChannel.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/TodayGoal.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/User.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/UserAppMenuCustomization.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/UserEmailPreferredPerson.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/UserProvisioningRequest.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/Vacation_Request__c.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/WorkOrder.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/WorkType.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sharingRules/WorkTypeGroup.sharingRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabs/Vacation_Request__c.tab" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,15 +459,23 @@
         <option value="LightningWebComponent" />
         <option value="LightningWebComponent.js-meta" />
         <option value="Class" />
-        <option value="ApexClass" />
         <option value="ApexEnum" />
-        <option value="ApexClass.cls-meta" />
         <option value="Enum" />
+        <option value="ApexClass" />
+        <option value="ApexClass.cls-meta" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../Projects/TrueSalesforce" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1sRVlpLHuzOPdKIajM1uDJ4R0Z6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,6 +492,19 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="vacationTableControllerTests" type="ApexTest" factoryName="Apex Test" temporary="true" nameIsGenerated="true">
+      <option name="testFilePath" value="$PROJECT_DIR$/src/classes/vacationTableControllerTests.cls" />
+      <method v="2">
+        <option name="SFDeployBeforeRunTaskProvider" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Apex Test.vacationTableControllerTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,7 +536,21 @@
       <option name="project" value="LOCAL" />
       <updated>1620902254281</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: Basic app structure">
+      <created>1620916467797</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620916467797</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: Basic app structure (Apex classes)">
+      <created>1620916497476</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620916497476</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,10 +563,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Deploy with ApexVCS" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="feat: Basic app structure" />
+    <MESSAGE value="feat: Basic app structure (Apex classes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Basic app structure (Apex classes)" />
   </component>
 </project>

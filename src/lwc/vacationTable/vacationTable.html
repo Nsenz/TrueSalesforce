@@ -42,6 +42,9 @@
                     <th class="" scope="col">
                         <div class="slds-truncate" title="Manager">Manager</div>
                     </th>
+                    <th scope="col">
+                        <div class="slds-truncate" title="Action">Action</div>
+                    </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -70,6 +73,38 @@
                     <td data-label="Manager">
                         <div class="slds-truncate">Dmitrii</div>
                     </td>
+                    <td data-label="Action">
+                        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
+                            <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" aria-expanded="true" title="Show More">
+                                <p>...</p>
+                                <div class="slds-dropdown slds-dropdown_left">
+                                    <ul class="slds-dropdown__list" role="menu">
+                                        <li class="slds-dropdown__item" role="presentation">
+                                            <a href="#" role="menuitem" tabindex="-1">
+                                                <span class="slds-truncate" title="Remove">
+                                                    <span>Remove</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="slds-dropdown__item" role="presentation">
+                                            <a href="#" role="menuitem" tabindex="-1">
+                                                <span class="slds-truncate" title="Submit">
+                                                    <span>Submit</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="slds-dropdown__item" role="presentation">
+                                            <a href="#" role="menuitem" tabindex="-1">
+                                                <span class="slds-truncate" title="Approve">
+                                                    <span>Approve</span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </div>
+                    </td>
                 </tr>
                 </tbody>
             </table>
@@ -86,22 +121,17 @@
                     <lightning-card title="Create Record" icon-name="standard:record">
                         <div class="slds-m-around_medium">
                             <!-- Dropdown selector -->
-                            <div class="slds-form-element">
-                                <label class="slds-form-element__label" for="requestType">Request Type</label>
-                                <div class="slds-form-element__control">
-                                    <div class="slds-select_container">
-                                        <select class="slds-select" id="requestType">
-                                            <!-- REPLACE WITH DATA FROM BACKEND -->
-                                            <template for:each={requestTypes} for:item="requestType">
-                                                <option key={requestType}>{requestType}</option>
-                                            </template>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
+                            <lightning-combobox
+                                    name="requestType"
+                                    label="Request type"
+                                    placeholder="Select request type"
+                                    options={requestTypes}
+                                    onchange={handleRequestType}
+                                    required>
+                            </lightning-combobox>
                             <!-- -->
-                            <lightning-input label="Date Start" type="date" onchange={handleDateStart} class="slds-m-bottom_x-small"></lightning-input>
-                            <lightning-input label="Date End" type="date" onchange={handleDateEnd} class="slds-m-bottom_x-small"></lightning-input>
+                            <lightning-input label="Date Start" type="date" onchange={handleDateStart} required class="slds-m-bottom_x-small"></lightning-input>
+                            <lightning-input label="Date End" type="date" onchange={handleDateEnd} required class="slds-m-bottom_x-small"></lightning-input>
                             <lightning-input label="Manager" disabled class="slds-m-bottom_x-small" value={manager}></lightning-input>
                         </div>
                     </lightning-card>
@@ -114,4 +144,5 @@
         </section>
         <div class="slds-backdrop slds-backdrop_open"></div>
     </template>
+    <!-- Modal -->
 </template>
