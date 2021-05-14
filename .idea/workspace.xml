@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c61275e3-e5a1-4d16-9b12-5f882651e390" name="Default Changelist" comment="Deploy with ApexVCS">
+    <list default="true" id="c61275e3-e5a1-4d16-9b12-5f882651e390" name="Default Changelist" comment="feature: Client and server validation">
       <change beforePath="$PROJECT_DIR$/src/applications/Dmitrii.app" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/applications/standard__AllTabSet.app" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/applications/standard__AppLauncher.app" beforeDir="false" />
@@ -25,6 +25,7 @@
       <change beforePath="$PROJECT_DIR$/src/applications/standard__Sites.app" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignmentRules/Case.assignmentRules" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assignmentRules/Lead.assignmentRules" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/classes/vacationTableControllerTests.cls" beforeDir="false" afterPath="$PROJECT_DIR$/src/classes/vacationTableControllerTests.cls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/communities/Internal Zone.community" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/MarketingProductInquiryResponse.email" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/email/unfiled$public/SUPPORTSelfServiceNewCommentNotificationSAMPLE.email" beforeDir="false" />
@@ -177,6 +178,7 @@
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationButton/vacationButton.js-meta.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lwc/vacationTable/vacationTable.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/objectTranslations/Vacation_Request__c-ru.objectTranslation" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/profiles/Admin.profile" beforeDir="false" />
@@ -493,15 +495,24 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Apex Test.vacationTableControllerTests.test_insertNewRequest">
     <configuration name="vacationTableControllerTests" type="ApexTest" factoryName="Apex Test" temporary="true" nameIsGenerated="true">
       <option name="testFilePath" value="$PROJECT_DIR$/src/classes/vacationTableControllerTests.cls" />
       <method v="2">
         <option name="SFDeployBeforeRunTaskProvider" enabled="true" />
       </method>
     </configuration>
+    <configuration name="vacationTableControllerTests.test_insertNewRequest" type="ApexTest" factoryName="Apex Test" temporary="true" nameIsGenerated="true">
+      <option name="methodName" value="test_insertNewRequest" />
+      <option name="testFilePath" value="$PROJECT_DIR$/src/classes/vacationTableControllerTests.cls" />
+      <option name="testKind" value="Method" />
+      <method v="2">
+        <option name="SFDeployBeforeRunTaskProvider" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Apex Test.vacationTableControllerTests.test_insertNewRequest" />
         <item itemvalue="Apex Test.vacationTableControllerTests" />
       </list>
     </recent_temporary>
@@ -550,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620916497476</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feature: Client and server validation">
+      <created>1620992928894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620992928894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -570,6 +588,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="feat: Basic app structure" />
     <MESSAGE value="feat: Basic app structure (Apex classes)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Basic app structure (Apex classes)" />
+    <MESSAGE value="feature: Client and server validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: Client and server validation" />
   </component>
 </project>

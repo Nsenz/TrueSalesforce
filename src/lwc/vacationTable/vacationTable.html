@@ -120,7 +120,6 @@
                 <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
                     <lightning-card title="Create Record" icon-name="standard:record">
                         <div class="slds-m-around_medium">
-                            <!-- Dropdown selector -->
                             <lightning-combobox
                                     name="requestType"
                                     label="Request type"
@@ -129,7 +128,6 @@
                                     onchange={handleRequestType}
                                     required>
                             </lightning-combobox>
-                            <!-- -->
                             <lightning-input label="Date Start" type="date" onchange={handleDateStart} required class="slds-m-bottom_x-small"></lightning-input>
                             <lightning-input label="Date End" type="date" onchange={handleDateEnd} required class="slds-m-bottom_x-small"></lightning-input>
                             <lightning-input label="Manager" disabled class="slds-m-bottom_x-small" value={manager}></lightning-input>

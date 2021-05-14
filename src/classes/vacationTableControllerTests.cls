@@ -14,4 +14,14 @@ public class vacationTableControllerTests {
 		}
 		System.assertEquals(entries, 3, 'Expected number of entries is 3, got '+entries);
 	}
+
+	@IsTest
+	static void test_insertNewRequest(){
+		Vacation_Request__c newRequest = new Vacation_Request__c(StartDate__c = Date.today(),
+				EndDate__c = Date.today().addDays(1), RequestType__c = 'Vacation',
+				Status__c = 'New');
+		insert newRequest;
+		List<Vacation_Request__c> values =[select id from Vacation_Request__c];
+		System.assertEquals(values.size(), 1);
+	}
 }
