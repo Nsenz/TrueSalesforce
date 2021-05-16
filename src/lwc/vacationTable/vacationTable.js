@@ -1,120 +1,122 @@
 import { LightningElement, track } from 'lwc';
-import getRequestTypes from '@salesforce/apex/vacationTableController.getRequestTypes';
-import getManager from '@salesforce/apex/vacationTableController.getManager';
-import validateFields from '@salesforce/apex/vacationTableController.validateFields'
+import getRequestTypes from '@salesforce/apex/utilController.getRequestTypes';
+import getStatusTypes from '@salesforce/apex/utilController.getStatusTypes'
+import getRequests from '@salesforce/apex/vacationTableController.getRequests';
+import updateStatus from '@salesforce/apex/vacationTableController.updateStatus';
+import removeRequest from '@salesforce/apex/vacationTableController.removeRequest';
+import meQuery from '@salesforce/apex/utilController.meQuery'
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
+const COLOR_MAPPER = {
+
+}
+
 export default class VacationTable extends LightningElement {
-    @track isModalOpened = false;
+    @track isFiltered = false;
+    @track requests = [];
 
-    //On mount
-    manager = '';
+    //onMount
+    me = null;
     requestTypes = [];
+    tableInfoBadges = [];
+    REQUEST_STATUS = [];
 
-    //onChange
-    selectedType = null;
-    selectedStartDate = null;
-    selectedEndDate = null;
-
-    connectedCallback(){
-        getRequestTypes()
-            .then(res => {
-                res.forEach(entry => {
-                    this.requestTypes.push({
-                        label: entry,
-                        value: entry
-                    });
-                });
-            })
-            .catch(err => {
-                console.log(err)
-            });
-        getManager()
-            .then(res => {
-                this.manager = res;
-            })
-            .catch(err => {
-                console.log(err)
-            });
+    mapColors(status){
+        switch(status){
+            case this.REQUEST_STATUS.NEW:
+                return 'background: #c2f2f1';
+            case this.REQUEST_STATUS.SUBMITTED:
+                return 'background: #faf9d2';
+            case this.REQUEST_STATUS.APPROVED:
+                return 'background: #d7fad2';
+            default:
+                return 'background: white';
+        }
     }
 
-    sendToast(title, message, variant){
-        const evt = new ShowToastEvent({
-                    title,
-                    message,
-                    variant,
-                });
-        this.dispatchEvent(evt);
-    }
+    markRequests(requests){
+        requests.forEach(request => {
+            if(request.Owner.Id == this.me
+                && request.Status__c == this.REQUEST_STATUS.NEW) request.isOwner = true;
+            else request.isOwner = false;
 
-    checkManager(){
-        if(this.manager) return true;
-        this.sendToast('Error', 'Current user has no manager', 'error');
-        return false;
-    }
+            if(request.Manager__r.Id == this.me
+                && request.Status__c == this.REQUEST_STATUS.SUBMITTED) request.isManager = true;
+            else request.isManager = false;
 
-    //New request button
-    openModal(){
-        this.isModalOpened = true;
-        this.checkManager();
-    }
-
-    //Either cross or close button in the modal window
-    closeModal(){
-        this.isModalOpened = false;
-    }
-
-    validateFieldsClient(){
-         const isInputCorrect = [...this.template.querySelectorAll('lightning-input'),
-                ...this.template.querySelectorAll('lightning-combobox')]
-                .reduce((valid, inputField) => {
-                    inputField.reportValidity();
-                    return valid && inputField.checkValidity();
-                }, true);
-
-         if(!isInputCorrect){
-                this.sendToast('Validation Error', 'Some of the fields are not valid', 'error');
-                return false;
-         }
-         return true;
-    }
-
-    async validateFieldsServer(){
-        const isValid = await validateFields({
-            'requestType': this.selectedType,
-            'startDate': this.selectedStartDate,
-            'endDate': this.selectedEndDate
+            request.color = this.mapColors(request.Status__c);
         });
-        if(!isValid){
-            this.sendToast('Validation Error', 'Some of the values are not valid', 'error');
-            return false;
-        }
-        return true;
     }
 
-    createRequest(component, event){
-        if(!this.validateFieldsClient()) return;
-        if(this.checkManager()){
-            this.validateFieldsServer().then(res=>{
-                if(!res) return;
-                this.closeModal();
-                // New record logic
-                return;
-            }).catch(err=>{
-                console.log(err);
+    async fetchRequests(){
+        let requests = await getRequests();
+        this.markRequests(requests);
+        if(this.isFiltered) requests = requests.filter(req => req.Owner.Id === this.me);
+        this.requests = requests;
+    }
+
+    async connectedCallback(){
+        this.me = await meQuery();
+        const status = await getStatusTypes();
+        status.forEach(entry => {
+            this.REQUEST_STATUS[entry.toUpperCase()] = entry;
+            this.tableInfoBadges.push({
+                name: entry,
+                color: this.mapColors(entry)
+            });
+        });
+        const types = await getRequestTypes();
+        types.forEach(type => {
+            this.requestTypes.push({
+                label: type,
+                value: type
             })
+        });
+        await this.fetchRequests();
+        setInterval(async ()=>{
+            await this.fetchRequests();
+        }, 1000);
+    }
+
+    openModal(){
+        const modalWindow = this.template.querySelector('c-modal');
+        modalWindow.openModal();
+        modalWindow.checkManager();
+    }
+
+    changeFiltered(){
+        this.isFiltered = !this.isFiltered;
+    }
+
+    async removeRecord(event){
+        const id = event.target.dataset.id;
+        const isSuccessful = await removeRequest({
+            'id': id
+        });
+        if(isSuccessful) this.requests = this.requests.filter((item) => item.Id != id);
+        else{
+            const evt = new ShowToastEvent({
+                title: 'Error',
+                message: 'An error when deleting a record',
+                variant: 'error',
+            });
+            this.dispatchEvent(evt);
         }
     }
 
-    handleRequestType(event){
-        this.selectedType = event.target.value;
+    async submitRecord(event){
+        const id = event.target.dataset.id;
+        await updateStatus({
+            'id': id,
+            'status': this.REQUEST_STATUS.SUBMITTED
+        });
     }
 
-    handleDateStart(event){
-        this.selectedStartDate = event.target.value;
-    }
-
-    handleDateEnd(event){
-        this.selectedEndDate = event.target.value;
+    async approveRecord(event){
+         const id = event.target.dataset.id;
+         await updateStatus({
+              'id': id,
+              'status': this.REQUEST_STATUS.APPROVED
+         });
     }
 }

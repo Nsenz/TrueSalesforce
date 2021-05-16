@@ -1,0 +1,33 @@
+<template>
+    <template if:true={opened}>
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Vacation request form</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning-card title="Create Record" icon-name="standard:record">
+                        <div class="slds-m-around_medium">
+                            <lightning-combobox
+                                    name="requestType"
+                                    label="Request type"
+                                    placeholder="Select request type"
+                                    options={types}
+                                    onchange={handleRequestType}
+                                    required>
+                            </lightning-combobox>
+                            <lightning-input label="Date Start" type="date" onchange={handleDateStart} required class="slds-m-bottom_x-small"></lightning-input>
+                            <lightning-input label="Date End" type="date" onchange={handleDateEnd} required class="slds-m-bottom_x-small"></lightning-input>
+                            <lightning-input label="Manager" disabled class="slds-m-bottom_x-small" value={manager}></lightning-input>
+                        </div>
+                    </lightning-card>
+                </div>
+                <footer class="slds-modal__footer slds-modal__footer_directional">
+                    <button class="slds-button slds-button_neutral" onclick={closeModal}>Close</button>
+                    <button class="slds-button slds-button_brand" onclick={createRequest}>Create a new request</button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

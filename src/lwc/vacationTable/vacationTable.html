@@ -3,11 +3,27 @@
         <div class="slds-card__header slds-grid">
             <header class="slds-media slds-media_center slds-has-flexi-truncate">
                 <div class="slds-media__body">
-                    <h2 class="slds-card__header-title">
-                        <a href="#" class="slds-card__header-link slds-truncate" title="Vacation Requests">
-                            <span>Vacation Requests</span>
-                        </a>
-                    </h2>
+                    <center>
+                        <h1>
+                            <b>Vacation Requests</b>
+                        </h1>
+                    </center>
+                    <!-- As a separate component? -->
+                    <div class="slds-form-element">
+                        <label class="slds-checkbox_toggle slds-grid">
+                            <input type="checkbox" name="checkbox-toggle-15"
+                                   value={isFiltered}
+                                   aria-describedby="checkbox-toggle-15"
+                                   onclick={changeFiltered}
+                            />
+                            <span id="checkbox-toggle-15" class="slds-checkbox_faux_container" aria-live="assertive">
+                                <span class="slds-checkbox_faux"></span>
+                                <span class="slds-checkbox_on"></span>
+                                <span class="slds-checkbox_off"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <!-- -->
                 </div>
                 <div class="slds-no-flex">
                     <lightning-button label="New Request" onclick={openModal}></lightning-button>
@@ -18,9 +34,6 @@
             <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-table_bordered slds-table_fixed-layout" aria-labelledby="element-with-table-label other-element-with-table-label">
                 <thead>
                 <tr class="slds-line-height_reset">
-                    <th class="" scope="col">
-                        <div class="slds-truncate" title="Request">Request</div>
-                    </th>
                     <th class="" scope="col">
                         <div class="slds-truncate" title="Owner">Owner</div>
                     </th>
@@ -48,99 +61,69 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="slds-hint-parent">
-                    <td data-label="Request">
-                        <div class="slds-truncate">1</div>
-                    </td>
-                    <td data-label="Owner">
-                        <div class="slds-truncate">Dmitrii</div>
-                    </td>
-                    <td data-label="Vacation Type">
-                        <div class="slds-truncate">Vacation</div>
-                    </td>
-                    <td data-label="Start Date">
-                        <div class="slds-truncate">13.05.2021</div>
-                    </td>
-                    <td data-label="End Date">
-                        <div class="slds-truncate">14.05.2021</div>
-                    </td>
-                    <td data-label="Working Days">
-                        <div class="slds-truncate">1</div>
-                    </td>
-                    <td data-label="Status">
-                        <div class="slds-truncate">New</div>
-                    </td>
-                    <td data-label="Manager">
-                        <div class="slds-truncate">Dmitrii</div>
-                    </td>
-                    <td data-label="Action">
-                        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open">
-                            <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" aria-expanded="true" title="Show More">
-                                <p>...</p>
-                                <div class="slds-dropdown slds-dropdown_left">
-                                    <ul class="slds-dropdown__list" role="menu">
-                                        <li class="slds-dropdown__item" role="presentation">
-                                            <a href="#" role="menuitem" tabindex="-1">
-                                                <span class="slds-truncate" title="Remove">
-                                                    <span>Remove</span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="slds-dropdown__item" role="presentation">
-                                            <a href="#" role="menuitem" tabindex="-1">
-                                                <span class="slds-truncate" title="Submit">
-                                                    <span>Submit</span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li class="slds-dropdown__item" role="presentation">
-                                            <a href="#" role="menuitem" tabindex="-1">
-                                                <span class="slds-truncate" title="Approve">
-                                                    <span>Approve</span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </button>
-                        </div>
-                    </td>
-                </tr>
+                <template for:each={requests} for:item="request">
+                    <tr key={request.Id} style={request.color} class="slds-hint-parent">
+                            <td data-label="Owner">
+                                <div class="slds-truncate">{request.Owner.Name}</div>
+                            </td>
+                            <td data-label="Vacation Type">
+                                <div class="slds-truncate">{request.RequestType__c}</div>
+                            </td>
+                            <td data-label="Start Date">
+                                <div class="slds-truncate">{request.StartDate__c}</div>
+                            </td>
+                            <td data-label="End Date">
+                                <div class="slds-truncate">{request.EndDate__c}</div>
+                            </td>
+                            <td data-label="Working Days">
+                                <div class="slds-truncate">{request.WorkingDays__c}</div>
+                            </td>
+                            <td data-label="Status">
+                                <div class="slds-truncate">{request.Status__c}</div>
+                            </td>
+                            <td data-label="Manager">
+                                <div class="slds-truncate">{request.Manager__r.Name}</div>
+                            </td>
+                            <td data-label="Action">
+                                <lightning-button-menu style="background: white" alternative-text="Show action menu">
+                                    <lightning-menu-item label="..." disabled>
+                                    </lightning-menu-item>
+                                    <template if:true={request.isOwner}>
+                                        <lightning-menu-item value="Remove"
+                                                             data-id={request.Id}
+                                                             data-owner={request.Owner.Id}
+                                                             onclick={removeRecord}
+                                                             label="Remove">
+                                        </lightning-menu-item>
+                                    </template>
+                                    <template if:true={request.isOwner}>
+                                        <lightning-menu-item value="Submit"
+                                                             data-id={request.Id}
+                                                             onclick={submitRecord}
+                                                             label="Submit">
+                                        </lightning-menu-item>
+                                    </template>
+                                    <template if:true={request.isManager}>
+                                        <lightning-menu-item value="Approve"
+                                                             data-id={request.Id}
+                                                             onclick={approveRecord}
+                                                             label="Approve">
+                                        </lightning-menu-item>
+                                    </template>
+                                </lightning-button-menu>
+                            </td>
+                    </tr>
+                </template>
                 </tbody>
             </table>
+            <br />
+            <template for:each={tableInfoBadges} for:item="info">
+                <lightning-badge key={info.name}
+                                 label={info.name}
+                                 style={info.color}>
+                </lightning-badge>
+            </template>
         </div>
     </article>
-    <!-- Modal as a separate component? -->
-    <template if:true={isModalOpened}>
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
-            <div class="slds-modal__container">
-                <header class="slds-modal__header">
-                    <h2 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Vacation request form</h2>
-                </header>
-                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
-                    <lightning-card title="Create Record" icon-name="standard:record">
-                        <div class="slds-m-around_medium">
-                            <lightning-combobox
-                                    name="requestType"
-                                    label="Request type"
-                                    placeholder="Select request type"
-                                    options={requestTypes}
-                                    onchange={handleRequestType}
-                                    required>
-                            </lightning-combobox>
-                            <lightning-input label="Date Start" type="date" onchange={handleDateStart} required class="slds-m-bottom_x-small"></lightning-input>
-                            <lightning-input label="Date End" type="date" onchange={handleDateEnd} required class="slds-m-bottom_x-small"></lightning-input>
-                            <lightning-input label="Manager" disabled class="slds-m-bottom_x-small" value={manager}></lightning-input>
-                        </div>
-                    </lightning-card>
-                </div>
-                <footer class="slds-modal__footer slds-modal__footer_directional">
-                    <button class="slds-button slds-button_neutral" onclick={closeModal}>Close</button>
-                    <button class="slds-button slds-button_brand" onclick={createRequest}>Create a new request</button>
-                </footer>
-            </div>
-        </section>
-        <div class="slds-backdrop slds-backdrop_open"></div>
-    </template>
-    <!-- Modal -->
+    <c-modal types={requestTypes}></c-modal>
 </template>

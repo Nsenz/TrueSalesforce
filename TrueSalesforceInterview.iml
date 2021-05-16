@@ -21,9 +21,10 @@
   </component>
   <component name="RetrieveModel" standardCheckboxSelected="false">
     <selectedComponentNames>
-      <SelectedComponentNamesPersistedState type="CUSTOM_OBJECT" selectAll="true" />
       <SelectedComponentNamesPersistedState type="LIGHTNING_WEB_COMPONENT" selectAll="true" />
+      <SelectedComponentNamesPersistedState type="STATIC_RESOURCE" selectAll="true" />
       <SelectedComponentNamesPersistedState type="APEX_CLASS" selectAll="true" />
+      <SelectedComponentNamesPersistedState type="CUSTOM_OBJECT" selectAll="true" />
     </selectedComponentNames>
     <componentTreeState>
       <RetrieveComponentTreeNodePersistedState componentType="ApexClass" isChecked="true" isMajor="true" />
@@ -41,7 +42,7 @@
       <RetrieveComponentTreeNodePersistedState componentType="Layout" isMajor="true" />
       <RetrieveComponentTreeNodePersistedState componentType="LightningComponentBundle" isChecked="true" isMajor="true" />
       <RetrieveComponentTreeNodePersistedState componentType="Network" isMajor="true" />
-      <RetrieveComponentTreeNodePersistedState componentType="StaticResource" isMajor="true" />
+      <RetrieveComponentTreeNodePersistedState componentType="StaticResource" isChecked="true" isMajor="true" />
       <RetrieveComponentTreeNodePersistedState componentType="Workflow" isMajor="true" />
       <RetrieveComponentTreeNodePersistedState componentType="ApexTestSuite" />
       <RetrieveComponentTreeNodePersistedState componentType="ApprovalProcess" />
@@ -1052,12 +1053,22 @@
         </entry>
         <entry key="01p0900000GyeEpAAJ">
           <value>
-            <FileRetrievalHistory lastSynchronizationDate="1620984472000" />
+            <FileRetrievalHistory lastSynchronizationDate="1621088032000" />
           </value>
         </entry>
         <entry key="01p0900000Gykb6AAB">
           <value>
             <FileRetrievalHistory lastSynchronizationDate="1620984472000" />
+          </value>
+        </entry>
+        <entry key="01p0900000Gz4iGAAR">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1621088032000" />
+          </value>
+        </entry>
+        <entry key="01p0900000Gz4iLAAR">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1621088558000" />
           </value>
         </entry>
         <entry key="01r09000000LTJHAA4">
@@ -1178,6 +1189,16 @@
         <entry key="07009000001KfMzAAK">
           <value>
             <FileRetrievalHistory lastSynchronizationDate="1620831640000" />
+          </value>
+        </entry>
+        <entry key="08109000000BApqAAG">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1621096495000" />
+          </value>
+        </entry>
+        <entry key="08109000000BApvAAG">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1621097973000" />
           </value>
         </entry>
         <entry key="09D0900000EnJujEAF">
@@ -1382,12 +1403,17 @@
         </entry>
         <entry key="0Rb09000000DZHnCAO">
           <value>
-            <FileRetrievalHistory lastSynchronizationDate="1620992721000" />
+            <FileRetrievalHistory lastSynchronizationDate="1621085828000" />
           </value>
         </entry>
         <entry key="0Rb09000000DZHoCAO">
           <value>
-            <FileRetrievalHistory lastSynchronizationDate="1620992721000" />
+            <FileRetrievalHistory lastSynchronizationDate="1621097778000" />
+          </value>
+        </entry>
+        <entry key="0Rb09000000DaOVCA0">
+          <value>
+            <FileRetrievalHistory lastSynchronizationDate="1621097778000" />
           </value>
         </entry>
         <entry key="0rp09000001FMKXAA4">
